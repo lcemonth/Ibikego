@@ -1,0 +1,102 @@
+body{
+    	background-color:#e6e6e6;/*頁面背景色*/
+		}
+			
+		.hd{
+			height: 200px;
+		}
+		.img-thumbnail{
+			width: 280px;
+			height: 280px;
+		}
+		.item_name{
+			/*background-color:#FFD382;*/
+			margin-bottom:5px;
+			height:40px;
+			font-size:36px;/*字體大小*/
+		}
+		.item_no{
+			/*background-color: #FFD382; */
+			margin: 10px 0px;/*外部距離*/
+			text-align:center; /*內部置中*/
+
+			border-top-style:solid;/*上線*/
+			border-bottom-style:solid;/*下線*/
+			border-color:#E6E9ED;/*線色*/
+		}
+		.item_price{
+			background-color:#FFFCD7;
+			height: 100px;
+			padding:10px 15px;/*內部距離*/
+			border-top-style:solid;/*上線*/
+			border-bottom-style:solid;/*下線*/
+			border-color:#E6E3C2;/*線色*/
+
+		}
+		.hr{
+			border-top-style:solid;/*上線*/ 
+			width: 840px;/*線長*/ 
+			margin: -3px 0px 10px;/*外部距離*/ 
+			border-color:#7bbdff;/*線色*/
+		}
+		.imgs li{
+ 			display: inline;/*不顯示●*/
+ 			margin:-15px;
+ 		}
+ 		.imgs li img{
+ 		width: 100%;
+ 		}
+ 		.box{
+ 			background-color: ;
+ 			position:absolute;/*絕對位置*/top:200px;/*絕對高度*/right:250px;/*右邊*/
+ 			height: 720px;
+ 			width: 350px;
+ 		}
+		.table {
+		 	 background: #fff;
+		 	 overflow: hidden;
+		 	  min-width: 100%;
+			}
+
+			.table tr:nth-of-type(2n){
+			  background: #eee;
+			}
+			.table th {
+			  display: none;
+			}
+
+			.table td {
+			  display: block;
+			}
+			.table td:before {
+			  font-weight: bold;
+			  width: 6.5em;
+			  display: inline-block;
+			}
+
+			.table th, .table td {
+			  text-align: left;
+			  padding: 1em !important;
+			  margin: 0.5em 1em;
+			}
+
+			.table th, .table td:before {
+			  color: #D20B2A;
+			  font-weight: bold;
+			}
+
+			@media (min-width: 480px) {
+			  .table td:before {
+			    display: none;
+			  }
+			 .table th, .table td {
+			    display: table-cell;
+			    padding: 0.25em 0.5em;
+			  }
+			  .table th:first-child, 
+			  .table td:first-child {
+			    padding-left: 0;
+			    padding-right: 0;
+			  }
+			  
+			}	

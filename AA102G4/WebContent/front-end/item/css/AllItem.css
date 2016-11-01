@@ -1,0 +1,78 @@
+		body{
+    	background-color:#e6e6e6;/*頁面背景色*/
+		}
+		.hd{
+			height: 200px;
+		}	
+		.itembox{
+			width: 250px;
+			height: 335px;
+			float:left;/*並排*/
+			background-color: #fff;
+			border-radius:10px 10px 10px 10px;/*圓角*/
+			cursor:pointer;/*變手*/
+			font-weight:bolder;/*粗體字*/
+			overflow-x:hidden;/*x軸超出隱藏(右)*/
+			overflow-y:hidden;/*y軸超出隱藏(下)*/
+			margin:20px 0px 20px 27px;/*外邊距離*/
+			box-shadow: 0 1px 8px 0 rgba(0,0,0,0.2);
+		}
+		/*這裡是itembox裡的圖片*/
+		.itembox img{
+			width: 100%;
+			height: 75%;
+			border-radius:10px 10px 0px 0px;/*圓角*/
+		}
+		/*這裡是標題*/
+		.name{
+			font-weight:bolder;/*粗體字*/
+			margin-top: 5px;/*字體上距離*/
+			margin-bottom: 2px;/*字體下距離*/
+		}
+		/*價格*/
+		.price{
+			color:red;
+			margin: 0;
+		}
+		/*賣家*/
+		.mem{
+			font-size: 14px;/*字體大小*/
+			color: #CCCCCC;
+			margin: 0;
+		}
+		/*這裡是狀態*/
+		.added{
+			text-align:center;/*置中*/
+			position:relative; top:-21px; left:79%;/*絕對位置*/
+			background-color: red;
+			width: 75px;
+			-webkit-transform: rotate(-45deg);/*轉45度*/
+		}
+		/*盒子外框線*/
+		.itembox:hover{
+			box-shadow: 0px 0px 2px 4px #3399CC;
+		}
+		/*新增商品*/
+		.addItem{
+		position:fixed; 
+		bottom:20px; 
+		right:20px; 
+		background-color:red; 
+		width: 100px;
+		height: 100px;
+		line-height: 100px;
+		border: 1px dashed red;
+		border-radius: 100px;	/* 高度 */
+		}
+		/*顯示效果*/
+		.itembox{
+			opacity: 0;/*從0/無開始*/
+			transform: scale(0.4);/*從大到小動畫效果0.4秒*/
+			animation: itembox .8s ease-in forwards;/*從小到大動畫效果0.4秒*/
+		}
+		/*css3效果*/
+		@-webkit-keyframes itembox {
+			
+			70% {-webkit-transform: scale(1.1);/*在時間70%時大小為1.1(原本1)*/opacity:.8; -webkit-animation-timing-function: ease-out;/*以慢速結束效果*/ }
+			100% { -webkit-transform: scale(1);/*在時間100%時大小為1(原本大小)*/ opacity: 1;/*最後為不透明*/ }
+		}

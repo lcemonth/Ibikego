@@ -1,0 +1,111 @@
+ body{
+				 background-color: #26a8ff;
+			}
+		    .col-sm-12{ 
+				height: 27px; 
+		 	}
+			.col-md-12{
+				/*width: 100%;
+				background-color: #fdf;*/
+				text-align:center;
+			}
+			.col-md-2{
+				/*width: 100%;
+				background-color: #fcf;*/
+				height: 100px;
+				text-align:center;
+			}
+		
+			.table tr th{
+				text-align:center;
+			}
+			
+			.thumbnail img {
+			
+			height:100px;
+			}
+			.thumbnail{
+			height:300px;
+			width:250px;
+			}
+			.txtlim{
+			height:100px;
+/* 			white-space:nowrap; */
+			text-overflow:ellipsis;
+			-o-text-overflow:ellipsis;
+			overflow:hidden;
+			}
+			.box{
+			width: 240px;
+			height: 320px;
+			background-color: #fff;
+			border-radius:10px 10px 10px 10px;
+			cursor:pointer;/*變手*/
+			 overflow-y:hidden;         /*--設定超出的內容隱藏, IE, FireFox通用--*/
+		    text-overflow:ellipsis;  /*--(IE專用)在內容超出時,在後方補上逗號--*/
+		    /*white-space:nowrap;*/ /*-- 設定內容強制顯示一行,直到內容結束或<br>--*/
+			float:left;
+			margin:80px 20px 0px 0px;
+			}
+		
+	
+      
+		.box:hover{
+			box-shadow: 0px 0px 2px 4px #64A600;
+		}
+		
+		.aaa:hover{
+			box-shadow: 0px 0px 2px 4px #64A600;
+		}
+		.p1 {
+		    margin-top: 15px;/*字體高(外部)*/
+		    font-size: 14px;/*字體大小*/
+		    letter-spacing: 2px;/*字體寬*/
+		    line-height: 21px;/*字體高(內部)*/
+		    color: #555;/*字體顏色*/ 
+		  }
+		  h3, p{
+		    margin: 0;
+		    padding: 0;
+		    border: 0;
+		    font: inherit;   /*h3大小*/
+		    font-family: '蘋果儷中黑','微軟正黑體','Helvetica','Arial',sans-serif;
+		    
+			}
+		
+		#pp{
+			background-color: #EA7500;
+			width: 60px;
+			color:#fff;
+			position:relative; top:-20px; left:0%;/*box裡的絕對位置*/
+		
+		}
+		.zxc{
+		position:relative; top:-40px; left:75%;/*box裡的絕對位置*/
+		background-color: ;
+		}
+		.imgloc{
+		background-color: #7373B9;
+		text-align:center;
+		}
+		.underimg{
+		background-color: 	#97CBFF;
+		text-align:center;
+		height:185px;
+		}
+		img{
+		width: 100px;
+		height: 100px;
+		border-radius:10px 10px 10px 10px;
+		}
+		  .aaa{
+			opacity: 0;/*從0/無開始*/
+			transform: scale(0.4);/*從大到小動畫效果0.4秒*/
+			animation: aaa .8s ease-in forwards;/*從小到大動畫效果0.4秒*/
+		}
+		/*css3效果*/
+		@-webkit-keyframes aaa {
+			
+			70% {-webkit-transform: scale(1.1);/*在時間70%時大小為1.1(原本1)*/opacity:.8; -webkit-animation-timing-function: ease-out;/*以慢速結束效果*/ }
+			100% { -webkit-transform: scale(1);/*在時間100%時大小為1(原本大小)*/ opacity: 1;/*最後為不透明*/ }
+		}
